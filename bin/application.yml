@@ -1,0 +1,18 @@
+###########################################################
+#
+#   [LOCALHOST] application.yml
+#
+#
+
+server:
+    port: 10880
+    server-header: shortUrl
+
+spring:
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
+            staticPathPattern: /**
+    resources:
+        staticLocations: file:./src/main/webapp/WEB-INF/static
