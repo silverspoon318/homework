@@ -6,12 +6,15 @@
 ## 접속 URL
 http://{localhost}:10880/
 
-에러코드
--1 : url is empty
--2 : url is invalid
--3 : Short URL Maximum count exceeded
+## 코드설명
+코드|에러메세지
+---|---
+0|success
+-1|url is empty
+-2|url is invalid
+-3|Short URL Maximum count exceeded
 
-테스트 코드
+## 테스트 코드
 1. 체크 : 생성 전과 후가 original url이 같은지
 2. short url 이 중복없이 정상적으로 호출되는지
 3. 예외에 대한 리턴 값이 client에 정상적으로 전달되는지
