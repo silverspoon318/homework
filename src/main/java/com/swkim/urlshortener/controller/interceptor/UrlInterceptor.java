@@ -36,7 +36,7 @@ public class UrlInterceptor implements HandlerInterceptor {
 
 			Pattern p = Pattern.compile(regex);
 			if (!p.matcher(sb.toString()).matches()) {
-				throw new ShortenerException(-1).setErrorMessage("url is invalid");
+				throw new ShortenerException(-2).setErrorMessage("url is invalid");
 			}
 		}
 		return true;

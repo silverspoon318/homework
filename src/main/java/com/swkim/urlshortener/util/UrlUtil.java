@@ -20,9 +20,9 @@ public class UrlUtil {
 		return sb.toString();
 	}
 	
-	public static long convertToBase10(String tinyUrlCode) {
+	public static long convertToBase10(String shortUrlCode) {
 		long nBase10 = 0;
-		char[] chars = new StringBuilder(tinyUrlCode).toString().toCharArray();
+		char[] chars = new StringBuilder(shortUrlCode).toString().toCharArray();
 
 		for (int i = chars.length - 1; i >= 0; i--) {
 			int index = charsetStr.indexOf(chars[i]);
