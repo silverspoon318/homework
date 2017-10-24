@@ -18,7 +18,7 @@
 	<span class="short_link" style="font-family: Arial, Helvetica, sans-serif; font-size: 10pt;"></span>
 	</a>
 	<br/>
-	<script src="/static/jquery.min.js"></script>
+	<script src="http://static.four33.co.kr/service/notice_ext/front/js/jquery-1.8.1.min.js"></script>
 	<script type="text/javascript">
 		$(".btn_short").click(function(){
 			var url = $('.input_text').val().trim();

@@ -1,7 +1,7 @@
 package com.swkim.urlshortener.service.impl;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.stereotype.Service;
@@ -14,9 +14,8 @@ import com.swkim.urlshortener.util.UrlUtil;
 @Service
 public class UrlShortenerService implements IShortenerService {
 
-	private AtomicLong counter = new AtomicLong();
-
-	public Map<Long, ShortedUrlInfo> store = new HashMap<>();
+	private static AtomicLong counter = new AtomicLong();
+	private static Map<Long, ShortedUrlInfo> store = new ConcurrentHashMap<>();
 
 	public ShortedUrlInfo getShortUrl(String url) {
 		for (Long key : store.keySet()) {
