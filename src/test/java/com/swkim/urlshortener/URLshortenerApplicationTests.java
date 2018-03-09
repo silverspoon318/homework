@@ -32,7 +32,7 @@ public class URLshortenerApplicationTests {
 	private AtomicLong counter = new AtomicLong();
 
 	Logger log = Logger.getLogger(URLshortenerApplicationTests.class.getName());
-
+ 
 	@Test
 	public void checkReverseLogic() throws Exception {
 		String url = "https://www.twitch.tv/llilkafsdfds";
