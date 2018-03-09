@@ -27,6 +27,7 @@ import org.junit.Assert;
 public class URLshortenerApplicationTests {
 	@Autowired
 	private IShortenerService shortUrlSvc;
+	//test
 
 	private AtomicLong counter = new AtomicLong();
 
